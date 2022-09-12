@@ -18,9 +18,7 @@ function MeetupDetails(props) {
                 description={props.meetupData.description}
             />
         </Fragment>
-
     )
-
 }
 
 export async function getStaticPaths() {
@@ -65,24 +63,9 @@ export async function getStaticProps(context) {
                 title: selectedMeetup.title,
                 address: selectedMeetup.address,
                 description: selectedMeetup.description,
-
             }
         }
     }
     }
 
 export default MeetupDetails
-
-//
-//     [
-//     {
-//         params: {
-//             meetupId: 'm1'
-//         }
-//     },
-//     {
-//         params: {
-//             meetupId: 'm2'
-//         }
-//     },
-// ]
